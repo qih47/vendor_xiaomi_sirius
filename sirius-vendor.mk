@@ -1912,7 +1912,6 @@ PRODUCT_PACKAGES += \
     dpmapi \
     embmslibrary \
     qcrilhook \
-    qti-telephony-common \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
