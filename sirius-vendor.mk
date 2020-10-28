@@ -311,7 +311,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.cvp@1.0-service \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.allocator@1.0-service \
     vendor/xiaomi/sirius/proprietary/vendor/bin/hw/vendor.qti.hardware.mlshal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.mlshal@1.0-service \
@@ -512,7 +511,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.cvp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.cvp@1.0-service.rc \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator@1.0-service.rc \
     vendor/xiaomi/sirius/proprietary/vendor/etc/init/vendor.qti.hardware.mlshal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.mlshal@1.0-service.rc \
@@ -611,6 +609,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml \
     vendor/xiaomi/sirius/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml \
     vendor/xiaomi/sirius/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml \
+    vendor/xiaomi/sirius/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml \
+    vendor/xiaomi/sirius/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.cryptfshw@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.cryptfshw@1.0.xml \
     vendor/xiaomi/sirius/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/sirius/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/xiaomi/sirius/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -759,9 +759,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/displayfeature.default.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/hw/gralloc.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.sdm710.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/hw/hwcomposer.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.sdm710.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/hw/memtrack.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.sdm710.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/power.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.qcom.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/hw/sound_trigger.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sdm710.so \
@@ -911,7 +908,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplaydebug.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libdng_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdng_sdk.so \
@@ -946,7 +942,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloccore.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgrallocutils.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgui_vendor.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpclient.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpdsp.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpfrmwk.so \
@@ -1018,7 +1013,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdMetaData.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdutils.so \
@@ -1375,9 +1369,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/gralloc.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.sdm710.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/hwcomposer.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.sdm710.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/memtrack.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.sdm710.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/power.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.qcom.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/hw/sound_trigger.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.sdm710.so \
@@ -1508,7 +1499,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/libdisplayconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayconfig.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdisplaydebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaydebug.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libdng_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdng_sdk.so \
@@ -1541,7 +1531,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libgralloccore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloccore.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libgrallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocutils.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/libgui_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgui_vendor.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpclient.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpdsp.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpfrmwk.so \
@@ -1619,7 +1608,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
-    vendor/xiaomi/sirius/proprietary/vendor/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdMetaData.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/xiaomi/sirius/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
@@ -1869,6 +1857,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sirius/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libsdm-disp-vndapis \
     libplatformconfig \
     WfdService \
     CACertService \
